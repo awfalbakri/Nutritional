@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nutritional Website: Gallery Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Nutritional Website</h1>
+
+        <div id="social">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.jpg" alt="facebook">
+            </a>
+            <a href="https://www.x.com">
+                <img src="images/x.jpg" alt="x/twitter">
+            </a>
+            <a href="https://www.nhs.uk/">
+                <img src="images/NHS Logo.jpg" alt="NHS">
+            </a>
+        </div>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eating habits.html">Eating Habits</a></li>
+                <li><a href="exercise.html">Exercise</a></li>
+                <li><a class="active" href="gallery.html">Gallery</a></li>
+                <li><a href="sleeping habits.html">Sleeping Habits</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div id="title">
+                <h2>Gallery</h2>
+            </div>
+
+
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="images/Dashboard_952_The-many-health-benefits-of-regular-exerci.jpg" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="images/Long term effects of bad sleep.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="images/Healthy Eating Tips hosp.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Two plates of different food.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                  </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+
+        <div id="footer">
+            <a href="index.html">Home</a>  |  <a href="eating habits.html">Eating Habits</a>  |  <a href="exercise.html">Exercise</a>  |  <a href="gallery.html">Gallery</a>  |  <a href="sleeping habits.html">Sleeping Habits</a>  |  <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
