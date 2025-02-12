@@ -1,0 +1,329 @@
+html, body
+{
+    height: 100%;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=dcf09e&c2=a5d6db&gt=l&gd=dbr
+*/
+background: #DCF09E;
+background: linear-gradient(315deg, #DCF09E, #A5D6DB);
+background-attachment: fixed;
+}
+
+#header
+{
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding: 0;
+}
+
+h1
+{
+    padding: 10px;
+}
+
+#social
+{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+#social img
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+#nav 
+{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+
+#nav a, #nav a:visited
+{
+    color: black;
+    font-weight: 600;
+    display: block;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    background-color: white;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#nav a:hover
+{
+    background-color: yellowgreen;
+}
+
+a.active
+{
+    background-color: #A5D6DB !important;
+}
+
+#nav li
+{
+    list-style: none;
+}
+
+#nav ul
+{
+    padding: 0;
+}
+
+#content
+{
+    height: 100%;
+    float: left;
+    padding: 15px;
+    border-left: 1px solid black;
+    width: calc(100% - 250px);
+}
+
+#title h2
+{
+    text-align: center;
+    padding: 2px;
+    margin: 0px;
+}
+
+#footer
+{
+    clear: both;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid black;
+}
+
+#home_box
+{
+    width: 65%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.pics
+{
+    display: inline-block;
+    margin: 5px;
+}
+
+.pics img
+{
+    height: 177px;
+    width: 210px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.pics p
+{
+    margin: 0;
+}
+
+.videocontainer
+{
+    display: block;
+    text-align: center;
+}
+
+.video
+{
+    width: 560px;
+    height: 315px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.blocks
+{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.left img
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.blocks img
+{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.left p
+{
+    margin-left: 310px;
+}
+
+.right img
+{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right p
+{
+    margin-right: 320px;
+}
+
+.container
+{
+    padding: 20px;
+}
+
+input[type=text], textarea, select
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]
+{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea
+{
+    height: 200px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
